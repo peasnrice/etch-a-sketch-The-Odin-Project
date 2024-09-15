@@ -47,27 +47,6 @@ const createBoard = (size = 16) => {
 }
 
 createBoard(16);
-// for (let i = 0; i < 16; i++) {
-//     const newRow = document.createElement("div");
-//     newRow.id = `row-${i}`;
-//     newRow.classList.add("row");
-//     board.appendChild(newRow);
-//     for (let j = 0; j < 16; j++) {
-//         const newDiv = document.createElement("div");
-//         newDiv.id = `${i}-${j}`
-//         newDiv.classList.add("tile");
-//         newRow.appendChild(newDiv);
-//     }
-// }
-// 2. create styles for grid states
-
-// 3. create javascript listener events to change the colors on hover of divs. 
-const tiles = document.querySelectorAll(".tile")
-tiles.forEach(tile => {
-    tile.addEventListener("mouseover", (e) => {
-        e.target.classList.toggle("hoverState");
-    })
-});
 
 const newBoardSubmitButton = document.querySelector("#newBoardSubmit");
 
