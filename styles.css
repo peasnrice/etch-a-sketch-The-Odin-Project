@@ -1,0 +1,29 @@
+#board {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.tile {
+    width: 32px;
+    height: 32px;
+    border: solid 1px;
+    background-color: #fff;
+    flex: 1;
+}
+
+.hoverState {
+    background-color: #000;
+}
+
+#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
